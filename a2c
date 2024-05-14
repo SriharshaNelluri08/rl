@@ -1,0 +1,37 @@
+
+
+environment-name = 'Lunar Lander-' 2.
+
+
+for episods in range (episodes+1):
+
+    env=gym-make (enviroment, name)
+
+
+    done =false
+
+    Score = 0
+
+    while not done:
+
+        env.render()
+    
+        action =env-action-space.sample()
+    
+        Upacked-value = env. step (action)
+    
+        next-state, reward, done, info =
+    
+        unpacked-value (:4]
+    
+        score =score + reward
+
+    Print (format (episode, score))
+
+Print ( unpacked-values)
+
+from stable. baseliness import A2C
+
+moder =A2C ('MIPOricy, env, verbose = 1)
+
+moda-learn (total-timesteps-100000)
